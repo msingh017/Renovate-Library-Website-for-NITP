@@ -1,0 +1,76 @@
+<?php
+session_start();
+$username=$_SESSION["login_user"];
+   include('config.html');
+  
+// Check if image file is a actual image or fake image
+if(isset($_POST["submit"])) {
+    $head=$_POST['noticename'];
+  $target_dir = "uploads/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+// Check if $uploadOk is set to 0 by an error
+if ($uploadOk == 0) {
+    echo "Sorry, your file was not uploaded.";
+// if everything is ok, try to upload file
+} else {
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) 
+    {
+      echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+      $sql = "INSERT INTO notices (filelocation,noticename,id) VALUES ('$target_file','$head','$username')";
+      mysqli_query($db,$sql);
+    }	
+     else {
+        echo "Sorry, there was an error uploading your file.";
+    }
+}
+
+    
+}
+?>
+<html>
+   
+   <head>
+      <title>Welcome </title>
+   </head>
+   
+   <body>
+      <h1 align="center">Welcome <?php echo $_SESSION["login_user"]; ?></h1>
+      <div align="center">
+      <?php
+      
+      $result = "SELECT * FROM notices ORDER BY DATE DESC";
+     $sql=mysqli_query($db,$result);
+     if (mysqli_num_rows($sql) > 0) {
+          while($row = mysqli_fetch_assoc($sql)) {
+              $date=$row['date'];
+              $date=substr($date,0,10);
+             $date2=date_create($date);
+              $currentdate=date("Y-m-d");
+              $date3=date_create($currentdate);
+             $diff=date_diff($date2,$date3);
+             if(($diff->format("%R%a days"))<5)
+        echo "<a href='".$row['filelocation']."'>".$row['noticename']."</a><br/>";
+       // echo $diff->format("%R%a days");
+    }
+     }
+     // echo "<a href='".$row['filelocation']."'>".$row1['notice']."</a>";
+      
+    
+      ?>
+      </div>
+     
+      
+   </body>
+   <div align="center">
+   <form action="home.html" method="post" enctype="multipart/form-data">
+       <br/>Noticename<input type="text" name="noticename"><br/>
+   <br/>
+    Select documents to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+   </div>
+   <h2 align="center"><a href = "logout.html">Sign Out</a></h2>
+</html>

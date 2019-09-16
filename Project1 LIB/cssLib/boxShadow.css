@@ -1,0 +1,8 @@
+#boxshadow {
+    position: relative;
+    -moz-box-shadow: 10px 10px 5px grey;
+    -webkit-box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 5px grey;
+    padding: 10px;
+    background: white;
+}

@@ -1,0 +1,111 @@
+ <?php
+session_start();
+//$username=$_SESSION["login_user"];
+   include('detail.html');
+  
+// Check if image file is a actual image or fake image
+if(isset($_POST["submit"])) {
+    $head=$_POST['book'];
+    $head= strtolower($head);
+    $head1=$_POST['by'];
+    if ($head1=="author") 
+    {
+        $result = "SELECT * FROM bookdetail where author='$head'";
+       $sql=mysqli_query($db,$result);
+       if (mysqli_num_rows($sql) > 0) {
+          while($row = mysqli_fetch_assoc($sql)) {
+              echo "<br> ISBN ". $row["isbn"]. "  " . "  TITLE: ". $row["title"]. "  " ."  AUTHOR: ". $row["author"]. "   " ."  PUBLISHER: ". $row["publisher"]. "   " ."  DEPARTMENT: ". $row["department"]. "<br>";
+              
+          }
+      
+      
+          }
+    }
+else if ($head1=="isbn") 
+    {
+        $result = "SELECT * FROM bookdetail where isbn='$head'";
+       $sql=mysqli_query($db,$result);
+       if (mysqli_num_rows($sql) > 0) {
+          while($row = mysqli_fetch_assoc($sql)) {
+              echo "<br> ISBN ". $row["isbn"]. "  " . "  TITLE: ". $row["title"]. "  " ."  AUTHOR: ". $row["author"]. "   " ."  PUBLISHER: ". $row["publisher"]. "   " ."  DEPARTMENT: ". $row["department"]. "<br>";
+              
+          }
+      
+      
+          }
+    
+ 
+     
+}
+else if ($head1=="title") 
+    {
+       $result = "SELECT * FROM bookdetail where title='$head'";
+       $sql=mysqli_query($db,$result);
+       if (mysqli_num_rows($sql) > 0) {
+          while($row = mysqli_fetch_assoc($sql)) {
+              echo "<br> ISBN ". $row["isbn"]. "  " . "  TITLE: ". $row["title"]. "  " ."  AUTHOR: ". $row["author"]. "   " ."  PUBLISHER: ". $row["publisher"]. "   " ."  DEPARTMENT: ". $row["department"]. "<br>";
+              
+          }
+      
+      
+          }
+}
+ else if ($head1=="publisher") 
+    {
+        $result = "SELECT * FROM bookdetail where publisher='$head'";
+       $sql=mysqli_query($db,$result);
+       if (mysqli_num_rows($sql) > 0) {
+          while($row = mysqli_fetch_assoc($sql)) {
+              echo "<br> ISBN ". $row["isbn"]. "  " . "  TITLE: ". $row["title"]. "  " ."  AUTHOR: ". $row["author"]. "   " ."  PUBLISHER: ". $row["publisher"]. "   " ."  DEPARTMENT: ". $row["department"]. "<br>";
+              
+          }
+      
+      
+          }
+      
+}
+else if ($head1=="department") 
+    {
+         $result = "SELECT * FROM bookdetail where department='$head'";
+       $sql=mysqli_query($db,$result);
+       if (mysqli_num_rows($sql) > 0) {
+          while($row = mysqli_fetch_assoc($sql)) {
+              echo "<br> ISBN ". $row["isbn"]. "  " . "  TITLE: ". $row["title"]. "  " ."  AUTHOR: ". $row["author"]. "   " ."  PUBLISHER: ". $row["publisher"]. "   " ."  DEPARTMENT: ". $row["department"]. "<br>";
+              
+          }
+      
+      
+          }
+    
+}
+   else{
+	   echo"no book found";
+}
+}
+?>
+<html>
+   
+   <head>
+      <title>Welcome </title>
+   </head>
+   
+   <body>
+      
+   
+   <div align="center">
+   <form action="index2.html" method="post" enctype="multipart/form-data">
+    BookDetail
+    <input type="text" name="book" id="book">
+    <input type="submit" name="submit" value="submit">
+    <br/>
+    <br/>
+    Searchby:
+     <input type="radio" name="by" value="isbn">isbn
+    <input type="radio" value="title" name="by">title
+    <input type="radio" value="author" name="by">author
+    <input type="radio" value="publisher" name="by">publisher
+    <input type="radio" value="department" name="by">department
+</form>
+   </div>
+   </body>
+</html>

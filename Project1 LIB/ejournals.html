@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Library Timings</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="cssLib/button.css">
+  <link rel="stylesheet" type="text/css" href="cssLib/footer.css">
+  <link rel="stylesheet" type="text/css" href="cssLib/jgate.css">
+  
+  <style>
+
+p,li{
+    font-family: georgia,palatino;
+          font-size: 13pt;
+}
+h3{
+    color:red;
+    text-shadow: 2px 2px 4px #000000;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    
+    .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+} 
+
+@media only screen and (max-width: 992px) {
+    .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+    
+} 
+
+  @media (max-width: 600px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+
+</style>
+  
+  
+</head>
+<body>
+    <div style="padding: 75px;">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Library</a>
+        </div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Home<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index1.html">About Library</a></li>
+                        <li><a href="aimsandobjecttive.html">Aims & Objectives</a></li>
+                        <li><a href="rules.html">General Rules</a></li>
+                        <li><a href="Library Layout.html">Library Layout</a></li>
+                        <li><a href="Library Timings.html">Library Timings</a></li>
+                        <li><a href="aboutLibraryTeam.html">Library Team</a></li>
+                        <li><a href="LAC.html">Advisory Committee</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                   <a href="Library Section.html">Library Section</a>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Services<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                         <li><a href="ebook.html">e-Books</a></li>
+                         <li><a href="ejournals.html">e-Journals</a></li>
+                     </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle"  href="#" >Events </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="events1.html">Events<b class="caret"></b></a></li>
+                     </ul>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a href="faq.html">FAQs </a>
+                </li>
+                
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Contact Us <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="LAC.html">LAC Members</a></li>
+                        <li><a href="aboutLibraryTeam.html">About Library Team</a></li>
+                        <li><a href="askLibrarian.html">Ask Librarian</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Useful Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://blog.askiitians.com/" target="_blank">IITians Blogs</a></li>
+                        <li><a href="enews.html">e-Newspaper</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/a-complete-step-by-step-guide-for-placement-preparation-by-geeksforgeeks/"target="_blank">Placement Guide</a></li>
+                        <li><a href="https://www.pdfdrive.net/novel-books.html"target="_blank">Novels</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+      <div class="container" >
+   
+          <h1 style="color:red;text-align:center;text-shadow: 2px 2px 4px #000000; ">e-Journals</h1>
+          <div style="padding-left:3cm;padding-right:3cm">    
+              <div>
+                  <h3>
+ACM Digital Library 
+                  </h3>
+
+<p >Different types of journals, proceedings, books,    technical reports related to computer engineering etc. subscribed<br>
+							<a href="http://dl.acm.org/";>http://dl.acm.org/</a></p>
+						
+
+	 </div>
+
+<div>
+    <h3>
+
+ASCE Journals 
+    </h3>
+
+<p >It consists Journals of American Society of Civil Engineering, periodicals and transactions.
+			<br>
+								<a href="http://ascelibrary.org/";>http://ascelibrary.org//</a></p>
+
+</div>
+
+	 
+	 <div>
+             <h3>
+
+ASTM International 
+             </h3>
+
+<p >It consists all internationals standards
+
+				<br>
+								<a href="http://compass.astm.org/CUSTOMERS/filtrexx40.cgi?index.frm";>http://compass.astm.org/CUSTOMERS/filtrexx40.cgi?index.frm</a></p>
+
+</div>
+
+	 <div>
+             <h3>
+
+Economic & Political Weekly
+             </h3>
+
+<p >The Economic and Political Weekly (EPW) as the Journal is popularly known, occupies a special place in the intellectual history of independent India.
+				
+							<br>
+								<a href="http://www.epw.in/";>http://www.epw.in/</a></p>
+
+
+</div>
+
+	 <div>
+             <h3>
+
+ISID
+             </h3>
+
+<p >The Institute for Studies in Industrial Development (ISID), successor to the Corporate Studies Group (CSG), is a national-level policy research organization in the public domain and is affiliated to the Indian Council of Social Science Research (ICSSR).
+
+							<br>
+								<a href="http://isid.org.in/home.html";>http://isid.org.in/home.html</a></p>
+
+</div>
+
+	 <div>
+             <h3>
+
+J-Gate@e-Shodh Sindhu
+             </h3>
+
+<p >J-Gate is an Electronic gateway to global e-journals literature in this we may access the journals of others e-Shodh Sindhu members.
+					
+															<br>
+								<a href="http://jgateplus.com/search/";>http://jgateplus.com/search/</a></p>
+
+
+
+</div>
+
+	 <div>
+             <h3>
+
+	JSTORE
+             </h3>
+
+<p >JSTORE is a shared digital library to help university and college and institute libraries free up space on their shelves, save costs and provide better levels of access to more content than ever before. The aim is to expand access to scholarly content around the world and to preserve it for future generations.
+
+
+							
+								
+															<br>
+								<a href="http://www.jstor.org/";>http://www.jstor.org/</a></p>
+
+</div>
+
+	 <div>
+<h3>
+
+Journals of Oxford University Press
+</h3>
+
+<p >Oxford University Press (OUP) publishes the quality journals and delivers this research to the widest audience. 
+
+						<br>
+								<a href="http://www.oxfordjournals.org/en/";>http://www.oxfordjournals.org/en/</a></p>
+
+</div>
+
+	 <div>
+<h3>
+
+Nature
+</h3>
+
+<p >The Nature journal consists to natural science journals.
+
+						
+						<br>
+								<a href="http://www.nature.com/index.html";>http://www.nature.com/index.html</a></p>
+
+</div>
+
+              <div>
+              <h3>Web of Science
+              </h3>
+
+<p >The Web of Science is today’s premier research platform, helping the researcher quickly find, analyze and share information in the sciences, social sciences, arts and humanities.
+
+									<br>
+								<a href="http://apps.webofknowledge.com/WOS_GeneralSearch_input.do?product=WOS&search_mode=GeneralSearch&SID=Y1sBdNw8yLnryRJBSb7&preferencesSaved=";>http://apps.webofknowledge.com/WOS_GeneralSearch_input.do?product=WOS&search_mode=GeneralSearch&SID=Y1sBdNw8yLnryRJBSb7&preferencesSaved=</a></p>
+
+
+</div>
+<div>
+    <h3>
+
+ACS Publications
+    </h3>
+
+<p >It consists all Journals of American Chemical Society Chemistry Journals/periodicals.
+				
+								<br>
+								<a href=" hrefhttp://pubs.acs.org";>http://pubs.acs.org</a></p>
+
+
+</div>
+<div>
+
+    <h3>
+
+APS Journals
+    </h3>
+
+<p >It consists all Journals of American Physical Society of all 15 Physics Journals/periodicals.
+														
+														
+															<br>
+								<a href="http://journals.aps.org/";>http://journals.aps.org/</a></p>
+
+
+</div>
+<div>
+    <h3>
+
+IEL (IEEE/IEE)
+    </h3>
+
+<p >t provides the publications from Institute of Electrical and Electronics Engineers (IEEE) and the Institution of Electrical Engineers (IEE) and consists journals, transaction and magazines etc.
+				
+				
+						
+						<br>
+								<a href="http://ieeexplore.ieee.org/Xplore/home.jsp";>http://ieeexplore.ieee.org/Xplore/home.jsp</a></p>
+						
+							
+
+
+
+</div>
+<div>
+    <h3>
+
+Royal Society of Chemistry (RSC)
+    </h3>
+
+<p >Royal Society of Chemistry (RSC) invests in educating future generations of scientist. They raise and maintain standards. They are the partners with industry and academia, promoting collaboration and innovation.
+
+
+								<br>
+								<a href="http://pubs.rsc.org/";>http://pubs.rsc.org/</a></p>
+
+</div>
+
+<div>
+
+    <h3>
+
+Springer Links  
+    </h3>
+
+<p >This includes more than peer-reviewed journals, containing medicine, science, earth, environmental science, engineering, humanities, social sciences, mathematics and physics.
+
+							<br>
+								<a href="http://www.springer.com/home/main.mpx/";>http://www.springer.com/home/main.mpx/</a></p>
+							
+
+</div>
+<div>
+    <h3>
+
+Science Direct
+    </h3>
+
+<p >This is 08 (eight) subject collection namely Chemistry, Computer Science, Engineering, Environmental Science, Material Science, Mathematics, Physics & Astronomy, Social Science.
+
+										<br>
+								<a href="http://www.sciencedirect.com/";>http://www.sciencedirect.com/</a></p>
+
+
+</div>
+
+<div>
+
+    <h3>
+	
+SciFinder
+    </h3>
+
+<p >The interactive viewer includes direct links to hard-to-find and obscurely defined Chemistry in the patent text, thanks to annotations from CAS scientists. You can also explore new research avenues through SciFinder searches initiated within the patent.
+
+							<br>
+							<a href="https://scifinder.cas.org/">;https://scifinder.cas.org/</a></p>
+
+</div>
+<div>
+    <h3>
+
+Taylor & Francis 
+    </h3>
+
+<p >This is 04 (four) subject collection namely Chemistry, Engineering, Computing & Technology, Mathematics & Statistics, Physics & Material Science.
+				
+							<br>
+								<a href="http://www.tandfonline.com/";>http://www.tandfonline.com/</a></p>
+							
+
+
+</div>
+
+<div>
+    <h3>
+
+Wiley Online Journals
+    </h3>
+
+<p >It consists 09 (nine) subject collection namely Architecture, Chemistry, Civil Engineering, Computer Science Engineering, Electrical Engineering, Electronics Engineering, Mechanical Engineering, Physics.
+							
+							<br>
+								<a href="http://onlinelibrary.wiley.com/journal";>http://onlinelibrary.wiley.com/journal</a></p>
+						
+
+</div>
+<div>
+
+    <h3>
+
+Indian Standards: 
+</h3>
+
+<p >The internet version of Indian Standards on hard disc and CR ROM offered through INDEST-AICTE Consortium includes the entire collection of 18000 Indian Standards.</p>
+</div>
+
+              
+          </div>
+      </div>
+    </div>
+    <footer class="footer">
+
+			<div class="footer-left">
+
+                            <figure><img src="NITP-Logo.png" alt="" width="90px" height="90px" /><figcaption style="color:white;text-align: justify;margin-left: 10px;">NIT Patna</figcaption></figure>
+
+				<p class="footer-links">
+                                    <a href="index1.html">Home</a>
+					·
+                                        <a href="Library Section.html">Library Section</a>
+					·
+                                        <a href="Library Timings.html">Timings</a>
+					·
+                                        <a href="aboutLibraryTeam.html">Team</a>
+					·
+                                        <a href="faq.html">FAQs</a>
+					·
+                                        <a href="askLibrarian.html">Contact Us</a>
+					·
+                                        <a href="login.html">Login</a>
+					·
+                                        <a href="index2.html">Search</a>					
+				</p>
+
+				
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Ashok Rajpath, Mahendru,</span>Patna, Bihar-800005</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91-9876543210</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@nitp.ac.in">support_library@nitp.ac.in</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-about">
+					<span>J-Gate</span>
+					<div class="box">
+                                            <div class="container-1">
+                                                <input type="search" id="search" placeholder="Search..." />
+                                                <button type="button" style="margin-top:10px;" class="btn btn-danger btn-sm" id="submit" onclick="Redirect()">Search</button>
+                                            </div>
+                                            <div class="cont-2">
+                                                <span style="color:white;">Browse by:</span>
+                                            </div>
+                                            <div class="cont-3">
+                                                <input type="radio" id="r1" name="a" value="1"><span style="margin-right:15px;">A-Z</span>   
+                                                <input type="radio" id="r2" name="a" value="2" ><span style="margin-right:15px;">PUBLISHER</span>   
+                                                <input type="radio"  id="r3" name="a" value="3"><span >UPDATES</span>
+                                                
+                                            </div>
+                                            <script>
+                                                function Redirect(){
+                                                    var x =document.getElementById("search").value;
+                                                    var y ="https://jgateplus.com/search/journalFinder/?currentContext=allJournal&jf=true&allSub=true&searchOpts=Startingwith&q="+x;
+                                                    var u="https://jgateplus.com/search/journalFinder/?currentContext=allJournal&jf=true&allSub=true&blnPublisher=true&searchOpts=Startingwith&q="+x;
+                                                    var i="https://jgateplus.com/search/journalFinder/?currentContext=allJournal&jf=true&allSub=true&blnLatestUpdate=true&searchOpts=Startingwith&q="+x;
+                                                    if (document.getElementById('r1').checked){
+                                                        window.location = "" +y;
+                                                    }
+                                                    else if(document.getElementById('r2').checked){
+                                                        window.location = "" +u;
+                                                    }
+                                                    else if(document.getElementById('r3').checked){
+                                                        window.location = "" +i;
+                                                    }
+                                                }
+                                             </script>
+                                        </div>
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+					
+
+				</div>
+
+			</div>
+
+		</footer>
+</body>
+</html>

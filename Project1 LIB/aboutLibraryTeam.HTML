@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Library Team</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+  <link rel="stylesheet" type="text/css" href="cssLib/boxShadow.css">
+  <link rel="stylesheet" type="text/css" href="cssLib/button.css">
+  <link rel="stylesheet" type="text/css" href="cssLib/footer.css">
+  <link rel="stylesheet" type="text/css" href="cssLib/jgate.css">
+  
+  <style>
+       p,li{
+           text-align: justify;
+           font-family: georgia,palatino;
+          font-size: 13pt;
+      }
+      tr:hover td {
+    background-color: #E0E0E0;
+}
+      tr:nth-child(even) {
+    background-color: #EEEEEE;
+}
+      td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-family: georgia,palatino;
+          font-size: 13pt;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    
+    .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+} 
+
+@media only screen and (max-width: 992px) {
+    .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+    
+} 
+
+  @media (max-width: 600px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
+
+      
+  </style>
+  
+</head>
+<body >
+    <div style="padding: 75px">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Library</a>
+        </div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Home<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index1.html">About Library</a></li>
+                        <li><a href="aimsandobjecttive.html">Aims & Objectives</a></li>
+                        <li><a href="rules.html">General Rules</a></li>
+                        <li><a href="Library Layout.html">Library Layout</a></li>
+                        <li><a href="Library Timings.html">Library Timings</a></li>
+                        <li><a href="aboutLibraryTeam.html">Library Team</a></li>
+                        <li><a href="LAC.html">Advisory Committee</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                   <a href="Library Section.html">Library Section</a>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Services<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                         <li><a href="ebook.html">e-Books</a></li>
+                         <li><a href="ejournals.html">e-Journals</a></li>
+                     </ul>
+                </li>
+               <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle"  href="#" >Events </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="events1.html">Events<b class="caret"></b></a></li>
+                     </ul>
+                </li>
+                
+                
+                <li class="nav-item">
+                    <a href="faq.html">FAQs </a>
+                </li>
+                
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Contact Us <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="LAC.html">LAC Members</a></li>
+                        <li><a href="aboutLibraryTeam.html">About Library Team</a></li>
+                        <li><a href="askLibrarian.html">Ask Librarian</a></li>
+                        
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Useful Links<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://blog.askiitians.com/" target="_blank">IITians Blogs</a></li>
+                        <li><a href="enews.html">e-Newspaper</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/a-complete-step-by-step-guide-for-placement-preparation-by-geeksforgeeks/"target="_blank">Placement Guide</a></li>
+                        <li><a href="https://www.pdfdrive.net/novel-books.html"target="_blank">Novels</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container" >
+ <div itemprop="articleBody">
+     
+     <button class="btn btn-default btn-sm" onclick="topFunction()" id="myBtn" title="Back to top"> <span class="glyphicon glyphicon-hand-up"></span></button>
+    
+    <script>
+// When the user scrolls down 50px from the top of the document, show the button
+window.onscroll = function() {scrollFunction();};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+    
+    <div style="padding-left:2cm;padding-right:2cm;">
+    <h1 style="color:red;text-align:center;text-shadow: 2px 2px 4px #000000; ">Library Staff</h1>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover">
+            <caption>Library Staff</caption>
+            <thead>
+            <tr>
+                 <th scope="col">
+                     #
+                 </th>
+                <th scope="col">
+                    Name
+                </th>
+            
+                <th scope="col">
+                    Designation
+                </th>
+            
+                <th scope="col">
+                    Responsibility
+                </th>
+                
+                 <th scope="col">
+                    Contact
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1.</th>
+                <td><figure><img src="Anshu.jpg" alt="" width="150px" height="150px" /><figcaption>Prof. Anshuman Singh</figcaption></figure>
+</td>
+                <td>Professor - Dept. of Civil Engg.<br>PIC Library</td>
+                <td><ul><li>Policy</li></ul></td>
+                <td><p><span style="font-family: book antiqua,palatino,serif; font-size: 12pt;"><span id="cloak7cfbe25acf98174a516d304343b609db">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>document.getElementById('cloak7cfbe25acf98174a516d304343b609db').innerHTML='';var prefix='&#109;a'+'i&#108;'+'&#116;o';var path='hr'+'ef'+'=';var addy7cfbe25acf98174a516d304343b609db='asingh'+'&#64;';addy7cfbe25acf98174a516d304343b609db=addy7cfbe25acf98174a516d304343b609db+'n&#105;tp'+'&#46;'+'&#97;c'+'&#46;'+'&#105;n';var addy_text7cfbe25acf98174a516d304343b609db='asingh'+'&#64;'+'n&#105;tp'+'&#46;'+'&#97;c'+'&#46;'+'&#105;n';document.getElementById('cloak7cfbe25acf98174a516d304343b609db').innerHTML+='<a '+path+'\''+prefix+':'+addy7cfbe25acf98174a516d304343b609db+'\'>'+addy_text7cfbe25acf98174a516d304343b609db+'<\/a>';</script></span></p></td>
+                
+            </tr>
+            <tr>
+                <th scope="row">2.</th>
+                <td><figure><img src="Picture1.png" alt="" width="150px" height="150px" /><figcaption>Dr. Mahesh Singh</figcaption></figure></td>
+                <td>Deputy Librarian</td>
+                <td><ul><li>Policy Matter and Administration</li></ul></td>
+                <td><p><span style="font-family: book antiqua,palatino,serif; font-size: 12pt;"><span id="cloak964a35a95309a57ceb49c0278dadc416">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>document.getElementById('cloak964a35a95309a57ceb49c0278dadc416').innerHTML='';var prefix='&#109;a'+'i&#108;'+'&#116;o';var path='hr'+'ef'+'=';var addy964a35a95309a57ceb49c0278dadc416='mahesh'+'&#46;'+'singh;'+'&#64;';addy964a35a95309a57ceb49c0278dadc416=addy964a35a95309a57ceb49c0278dadc416+'n&#105;tp'+'&#46;'+'&#97;c'+'&#46;'+'&#105;n';var addy_text964a35a95309a57ceb49c0278dadc416='mahesh'+'&#46;'+'singh'+'&#64;'+'n&#105;tp'+'&#46;'+'&#97;c'+'&#46;'+'&#105;n';document.getElementById('cloak964a35a95309a57ceb49c0278dadc416').innerHTML+='<a '+path+'\''+prefix+':'+addy964a35a95309a57ceb49c0278dadc416+'\'>'+addy_text964a35a95309a57ceb49c0278dadc416+'<\/a>';</script></span></p></td>
+                
+            </tr>
+            <tr>
+                <th scope="row">3.</th>
+                <td><figure><img src="Picture2.png" alt="" width="150px" height="150px" /><figcaption>Mr. Sujit Kr. Chaudhari</figcaption></figure></td>
+                <td>Assistant Librarian</td>
+                <td><ul><li>Assist in policy matter & administration</li><li>Assistant Librarian</li></ul></td>
+                <td><p><span style="font-family: book antiqua,palatino,serif; font-size: 12pt;"><span id="cloak4267ce694b73c518356c3cdefc0b5a3f">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>document.getElementById('cloak4267ce694b73c518356c3cdefc0b5a3f').innerHTML='';var prefix='&#109;a'+'i&#108;'+'&#116;o';var path='hr'+'ef'+'=';var addy4267ce694b73c518356c3cdefc0b5a3f='m&#105;shr&#97;vk'+'&#64;';addy4267ce694b73c518356c3cdefc0b5a3f=addy4267ce694b73c518356c3cdefc0b5a3f+'n&#105;trkl'+'&#46;'+'&#97;c'+'&#46;'+'&#105;n';var addy_text4267ce694b73c518356c3cdefc0b5a3f=' m&#105;shr&#97;v@n&#105;trkl.&#97;c.&#105;n';document.getElementById('cloak4267ce694b73c518356c3cdefc0b5a3f').innerHTML+='<a '+path+'\''+prefix+':'+addy4267ce694b73c518356c3cdefc0b5a3f+'\'>'+addy_text4267ce694b73c518356c3cdefc0b5a3f+'<\/a>';</script></span></p></td>
+                
+            </tr>
+            <tr>
+                <th scope="row">4.</th>
+                <td><figure><img src="Picture3.png" alt="" width="150px" height="150px" /><figcaption>Mr. Deepak Kumar Singh</figcaption></figure></td>
+                <td>Assistant(Office)</td>
+                <td><ul><li>Office Work</li></ul></td>
+                <td><a href=""></a><br>Ph: +91-8935886029</td>
+                
+            </tr>
+            <tr>
+                <th scope="row">5.</th>
+                <td><figure><img src="Picture4.png" alt="" width="150px" height="150px" /><figcaption>Mrs. Sudha Lata Kumari</figcaption></figure></td>
+                <td>UDC</td>
+                <td><ul><li>Reference Section</li></ul></td>
+                <td><a href=""></a><br>Ph: +91-7301058350</td>
+                
+            </tr>
+            <tr>
+                <th scope="row">6.</th>
+                <td><figure><img src="Picture5.png" alt="" width="150px" height="150px" /><figcaption>	
+Mr. Shivanand Singh</figcaption></figure></td>
+                <td>Library  Professional Assistant</td>
+                <td><ul><li>Technical Processing Section</li></ul></td>
+                <td><p><span style="font-family: book antiqua,palatino,serif; font-size: 12pt;"><span id="cloak0bb5aece9b22a849299e27afa149c0cf">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>document.getElementById('cloak0bb5aece9b22a849299e27afa149c0cf').innerHTML='';var prefix='&#109;a'+'i&#108;'+'&#116;o';var path='hr'+'ef'+'=';var addy0bb5aece9b22a849299e27afa149c0cf='tr&#105;p&#97;th&#105;dp'+'&#64;';addy0bb5aece9b22a849299e27afa149c0cf=addy0bb5aece9b22a849299e27afa149c0cf+'n&#105;trkl'+'&#46;'+'&#97;c'+'&#46;'+'&#105;n';var addy_text0bb5aece9b22a849299e27afa149c0cf=' tr&#105;p&#97;th&#105;dp@n&#105;trkl.&#97;c.&#105;n';document.getElementById('cloak0bb5aece9b22a849299e27afa149c0cf').innerHTML+='<a '+path+'\''+prefix+':'+addy0bb5aece9b22a849299e27afa149c0cf+'\'>'+addy_text0bb5aece9b22a849299e27afa149c0cf+'<\/a>';</script></span></p></td>
+                
+            </tr>
+            <tr>
+                <th scope="row">7.</th>
+                <td><figure><img src="Picture6.png" alt="" width="150px" height="150px" /><figcaption>Mr. Rupesh Kr. Singh</figcaption></figure></td>
+                <td>Library Professional Assistant</td>
+                <td><ul><li>Circulation Section</li><li>Book Stack Section</li></ul></td>
+                <td><p><span style="font-family: book antiqua,palatino,serif; font-size: 12pt;"><span id="cloak8075161c5ecd8103d2840792fdb7d263">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>document.getElementById('cloak8075161c5ecd8103d2840792fdb7d263').innerHTML='';var prefix='&#109;a'+'i&#108;'+'&#116;o';var path='hr'+'ef'+'=';var addy8075161c5ecd8103d2840792fdb7d263='kd&#97;s'+'&#64;';addy8075161c5ecd8103d2840792fdb7d263=addy8075161c5ecd8103d2840792fdb7d263+'n&#105;trkl'+'&#46;'+'&#97;c'+'&#46;'+'&#105;n';var addy_text8075161c5ecd8103d2840792fdb7d263=' kd&#97;s@n&#105;trkl.&#97;c.&#105;n';document.getElementById('cloak8075161c5ecd8103d2840792fdb7d263').innerHTML+='<a '+path+'\''+prefix+':'+addy8075161c5ecd8103d2840792fdb7d263+'\'>'+addy_text8075161c5ecd8103d2840792fdb7d263+'<\/a>';</script></span></p></td>
+                
+            </tr>
+            <tr>
+                <th scope="row">8.</th>
+                <td><figure><img src="Picture7.png" alt="" width="150px" height="150px" /><figcaption>Mr. Shashi Chandan Kumar</figcaption></figure></td>
+                <td>Library Professional Assistant</td>
+                <td><ul><li>Circulation Section</li><li>Book Stack Section</li></ul></td>
+                <td><p><span style="font-family: book antiqua,palatino,serif; font-size: 12pt;"><span id="cloak7a397d562a171dd00728f6ceec786d60">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>document.getElementById('cloak7a397d562a171dd00728f6ceec786d60').innerHTML='';var prefix='&#109;a'+'i&#108;'+'&#116;o';var path='hr'+'ef'+'=';var addy7a397d562a171dd00728f6ceec786d60='s&#97;h&#117;s'+'&#64;';addy7a397d562a171dd00728f6ceec786d60=addy7a397d562a171dd00728f6ceec786d60+'n&#105;trkl'+'&#46;'+'&#97;c'+'&#46;'+'&#105;n';var addy_text7a397d562a171dd00728f6ceec786d60=' s&#97;h&#117;s@n&#105;trkl.&#97;c.&#105;n';document.getElementById('cloak7a397d562a171dd00728f6ceec786d60').innerHTML+='<a '+path+'\''+prefix+':'+addy7a397d562a171dd00728f6ceec786d60+'\'>'+addy_text7a397d562a171dd00728f6ceec786d60+'<\/a>';</script></span></p></td>
+                
+            </tr>
+            <tr>
+                <th scope="row">9.</th>
+                <td><figure><img src="Picture8.png" alt="" width="150px" height="150px" /><figcaption>Mr. Sonu Kumar</figcaption></figure></td>
+                <td>Library Attendant</td>
+                <td><ul><li>Assist to all routine activities of Library</li></ul></td>
+                <td><br>Ph: +91-9680691801</td>
+                
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <footer class="footer">
+
+			<div class="footer-left">
+
+                            <figure><img src="NITP-Logo.png" alt="" width="90px" height="90px" /><figcaption style="color:white;text-align: justify;margin-left: 10px;">NIT Patna</figcaption></figure>
+
+				<p class="footer-links">
+                                    <a href="index1.html">Home</a>
+					·
+                                        <a href="Library Section.html">Library Section</a>
+					·
+                                        <a href="Library Timings.html">Timings</a>
+					·
+                                        <a href="aboutLibraryTeam.html">Team</a>
+					·
+                                        <a href="faq.html">FAQs</a>
+					·
+                                        <a href="askLibrarian.html">Contact Us</a>
+					·
+                                        <a href="login.html">Login</a>
+					·
+                                        <a href="index2.html">Search</a>					
+				</p>
+
+				
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Ashok Rajpath, Mahendru,</span>Patna, Bihar-800005</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91-9876543210</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@nitp.ac.in">support_library@nitp.ac.in</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-about">
+					<span>J-Gate</span>
+					<div class="box">
+                                            <div class="container-1">
+                                                <input type="search" id="search" placeholder="Search..." />
+                                                <button type="button" style="margin-top:10px;" class="btn btn-danger btn-sm" id="submit" onclick="Redirect()">Search</button>
+                                            </div>
+                                            <div class="cont-2">
+                                                <span style="color:white;">Browse by:</span>
+                                            </div>
+                                            <div class="cont-3">
+                                                <input type="radio" id="r1" name="a" value="1"><span style="margin-right:15px;">A-Z</span>   
+                                                <input type="radio" id="r2" name="a" value="2" ><span style="margin-right:15px;">PUBLISHER</span>   
+                                                <input type="radio"  id="r3" name="a" value="3"><span >UPDATES</span>
+                                                
+                                            </div>
+                                            <script>
+                                                function Redirect(){
+                                                    var x =document.getElementById("search").value;
+                                                    var y ="https://jgateplus.com/search/journalFinder/?currentContext=allJournal&jf=true&allSub=true&searchOpts=Startingwith&q="+x;
+                                                    var u="https://jgateplus.com/search/journalFinder/?currentContext=allJournal&jf=true&allSub=true&blnPublisher=true&searchOpts=Startingwith&q="+x;
+                                                    var i="https://jgateplus.com/search/journalFinder/?currentContext=allJournal&jf=true&allSub=true&blnLatestUpdate=true&searchOpts=Startingwith&q="+x;
+                                                    if (document.getElementById('r1').checked){
+                                                        window.location = "" +y;
+                                                    }
+                                                    else if(document.getElementById('r2').checked){
+                                                        window.location = "" +u;
+                                                    }
+                                                    else if(document.getElementById('r3').checked){
+                                                        window.location = "" +i;
+                                                    }
+                                                }
+                                             </script>
+                                        </div>
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+					
+
+				</div>
+
+			</div>
+
+		</footer>
+</body>
+</html>
